@@ -43,27 +43,27 @@ const What: NextPage = () => {
             </p>
           </Link>
           <Link
+            href="/games"
+            className={styles.card}
+          >
+            <h2 className={inter.className}>
+              Other Games<span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Check out the other games I&apos;ve worked on.
+            </p>
+          </Link>
+          <Link
             href="https://github.com/Gekinzuku/santaschallenge"
             className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
               Git <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Check out the code for Santa&apos;s Challenge here.
-            </p>
-          </Link>
-          <Link
-            href="https://github.com/Gekinzuku/santaschallenge/releases/tag/v1.0.0"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Download to Play<span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Download and play the ROM for your emulator or DS.
             </p>
           </Link>
         </div>
@@ -73,31 +73,19 @@ const What: NextPage = () => {
             <strong>Santa&apos;s Challenge</strong><br /><br />
             A Chip&apos;s Challenge clone for Nintendo DS<br /><br />
 
-            <Image width="254" height="382" 
-              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/title-screen.png" 
-              alt="Santa's Challenge - Title Screen"
-            />
-            <Image width="254" height="382" 
-              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/level1.png" 
-              alt="Santa's Challenge - Level One"
-            />
-            <Image width="254" height="382" 
-              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/level3.png" 
-              alt="Santa's Challenge - Level Three"
-            />
-            <br /><br />
-            <Image width="254" height="382" 
-              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/credits.png" 
-              alt="Santa's Challenge - Credits"
-            />
-            <Image width="254" height="382" 
-              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/about.png" 
-              alt="Santa's Challenge - About"
-            />
-            <br />
+          <a
+            href="https://github.com/Gekinzuku/santaschallenge/releases/tag/v1.0.0"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download and play the ROM for your emulator or DS.
+          </a><br /><br />
+
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1YKwjQgeGw4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe><br /><br />
 
             <div className={styles.textleft}>
-              <strong>Story:</strong>
+              <strong>Story:</strong>&nbsp;
               It is December, and Santa is preparing to give his toys to all
               the children of the world. But he got lost on December first
               when his sled crashed in the North Pole woodlands. Now he needs
@@ -110,7 +98,24 @@ const What: NextPage = () => {
               Santa can return to the North Pole in time for Christmas...
               <br /><br />
 
-              <strong>Description:</strong> The three of us that made this game
+            </div><div>
+            <Image width="254" height="382" 
+              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/title-screen.png" 
+              alt="Santa's Challenge - Title Screen"
+            />&nbsp;&nbsp;
+            <Image width="254" height="382" 
+              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/level1.png" 
+              alt="Santa's Challenge - Level One"
+            />&nbsp;&nbsp;
+            <Image width="254" height="382" 
+              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/level3.png" 
+              alt="Santa's Challenge - Level Three"
+            />
+            <br /><br />
+            </div><div className={styles.textleft}>
+
+              <strong>Description:</strong>&nbsp;
+              The three of us that made this game
               have always loved puzzle adventure games, but it seems that
               lately they are just getting easier. With random NPCs always 
               telling you what to do, and annoying endless lines of text to 
@@ -122,7 +127,7 @@ const What: NextPage = () => {
               with an older feel to it.
               <br /><br />
 
-              <strong>Controls:</strong>
+              <strong>Controls:</strong>&nbsp;
               The game is designed so it can easily be played by a right or 
               left handed person. You can move Santa by pushing the directions
               on the directional pad or by using the &apos;A&apos;, &apos;B&apos;, &apos;Y&apos;, and &apos;X&apos;
@@ -137,7 +142,7 @@ const What: NextPage = () => {
               always be vertical.
               <br /><br />
 
-              <strong>Additional controls:</strong>
+              <strong>Additional controls:</strong>&nbsp;
               Sometimes you may find yourself stuck or just wanting to restart
               the level, in this case pressing select will restart the level.
               By pressing start you can access the pause menu, from here you 
@@ -147,7 +152,20 @@ const What: NextPage = () => {
               get the music back, press &apos;L&apos; or &apos;R&apos; again.
               <br /><br />
 
-              <strong>How to Play:</strong>For the most part we want you to 
+              </div><div>
+              <Image width="254" height="382" 
+                src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/credits.png" 
+                alt="Santa's Challenge - Credits"
+              />&nbsp;&nbsp;
+              <Image width="254" height="382" 
+                src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/about.png" 
+                alt="Santa's Challenge - About"
+              />
+              <br /><br />
+            </div><div className={styles.textleft}>
+
+              <strong>How to Play:</strong>&nbsp;
+              For the most part we want you to 
               have to figure out the game the way it was back in the day. But
               we&apos;ll tell you a few important points ;) The top screen 
               represents your stats. The first row of numbers is how many moves
@@ -165,7 +183,8 @@ const What: NextPage = () => {
               grinch&apos;s brothers they will steal your ice skates and fire boots.
               <br /><br />
 
-              <strong>A special note:</strong>Please keep in mind this is a
+              <strong>A special note:</strong>&nbsp;
+              Please keep in mind this is a
               puzzle game. Certain levels are designed to look impossible but 
               every level has been tested. There is a way to beat every level
               if you look hard enough. Also, note that the first several levels

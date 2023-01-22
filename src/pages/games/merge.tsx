@@ -42,10 +42,22 @@ const What: NextPage = () => {
               Check out my various projects here.
             </p>
           </Link>
-          
+          <Link
+            href="/games"
+            className={styles.card}
+          >
+            <h2 className={inter.className}>
+              Other Games<span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Check out the other games I&apos;ve worked on.
+            </p>
+          </Link>
           <Link
             href="https://github.com/geekylink/M.E.R.G.E."
             className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
               Git <span>-&gt;</span>
@@ -54,25 +66,14 @@ const What: NextPage = () => {
               Check out the code for M.E.R.G.E. here.
             </p>
           </Link>
-          <Link
-            href="https://github.com/geekylink/M.E.R.G.E./releases/tag/v1.0.0"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Download to Play<span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Download and run gold.exe to play
-            </p>
-          </Link>
         </div>
 
         <div className={styles.textsection}>
 
           <div className={styles.text}>
             <strong>M.E.R.G.E.</strong><br /><br />
+
+            <a href="https://github.com/geekylink/loz-links-target-wars/releases/tag/v1.0.0"target="_blank" rel="noopener noreferrer">Download to Play</a><br /><br />
 
             Simple cooperative unity game similar to asteroids, players must work together to defeat larger enemies by combining ships together.<br /><br />
             Players don&apos;t &quot;die&quot; you lose levels, and powerups, only lose by losing all planets.<br /><br />

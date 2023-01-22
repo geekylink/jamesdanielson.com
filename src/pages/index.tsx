@@ -115,6 +115,20 @@ export default function Home() {
           </Link>
 
           <Link
+            href="https://github.com/geekylink/jamesdanielson.com"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className={inter.className}>
+              This Site&apos;s Git <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              View the code for jamesdanielson.com here.
+            </p>
+          </Link>
+
+          <Link
             href="https://www.linkedin.com/in/james-danielson-33aba264/"
             className={styles.card}
             target="_blank"
@@ -125,20 +139,6 @@ export default function Home() {
             </h2>
             <p className={inter.className}>
               Want to reach out? - Send me a message on LinkedIn.
-            </p>
-          </Link>
-
-          <Link
-            href="https://toothtreks.com"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Tooth Treks <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Another website of mine - helping people from the USA &amp; Canada find affordable dental care abroad and enjoy a dream getaway too.
             </p>
           </Link>
 

@@ -342,3 +342,12 @@
 .text .link:visited:hover {
   color: lightseagreen;
 }
+
+.youtubeVideo {
+  max-width: 100%;  
+}
+
+.thumbnail {
+  height: 100%;
+  width: 25vw;
+}

@@ -116,47 +116,34 @@ const What: NextPage = () => {
 
         <div className={styles.textsection}>
           <p className={styles.text}>
-            <strong><Link href="/games/merge">M.E.R.G.E.</Link></strong><br /><br />
-            Simple cooperative unity game similar to asteroids, players must work together to defeat larger enemies by combining ships together.<br /><br />
+            <strong><Link href="/games">James Games</Link></strong><br /><br />
+            Some various games I&apos;ve made over the years.<br /><br />
 
-            <Image width="0" height="0" className={styles.screenshot} 
-              src="https://raw.githubusercontent.com/geekylink/M.E.R.G.E./main/screenshots/gameplay1.png" 
-              alt="M.E.R.G.E. Gameplay Screenshot" 
-            />
+            <Link href="/games/merge">
+              <Image width="0" height="0" className={styles.thumbnail}
+                src="https://raw.githubusercontent.com/geekylink/M.E.R.G.E./main/screenshots/gameplay1.png" 
+                alt="Gameplay Screenshot" />
+            </Link>
+            <Link href="/games/santaschallenge">
+              <Image width="254" height="382" 
+                src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/level3.png" 
+                alt="Santa's Challenge - Level One"
+              />
+            </Link>
+            <Link href="/games/pong-2600">
+              <Image width="0" height="0" className={styles.thumbnail}
+                src="https://raw.githubusercontent.com/Gekinzuku/pong-2600/main/screenshot.png" 
+                alt="Pong 2600 Screenshot"
+              />
+            </Link>
+            <Link href="/games/loz-links-target-wars">
+            <Image width="0" height="0" className={styles.thumbnail} 
+              src="https://raw.githubusercontent.com/geekylink/loz-links-target-wars/main/screenshots/Gameplay1.png"
+              alt="Gameplay" />
+            </Link>
           </p>
         </div>
 
-        <div className={styles.textsection}>
-          <p className={styles.text}>
-            <strong><Link href="/games/santaschallenge">Santa&apos;s Challenge</Link></strong><br /><br />
-            A homebrew Nintendo DS game, a Chip&apos;s Challenge clone for Nintendo DS<br /><br />
-
-            <Image width="254" height="382" 
-              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/title-screen.png" 
-              alt="Santa's Challenge - Title Screen"
-            />&nbsp;
-            <Image width="254" height="382" 
-              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/level1.png" 
-              alt="Santa's Challenge - Level One" 
-            />&nbsp;
-            <Image width="254" height="382" 
-              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/level3.png" 
-              alt="Santa's Challenge - Level Two" 
-            />&nbsp;
-          </p>
-        </div>
-
-        <div className={styles.textsection}>
-          <p className={styles.text}>
-            <strong><Link href="/games/pong-2600">Pong 2600</Link></strong><br /><br />
-            A homebrew clone of pong for the Atari 2600 ROM written in 6502 ASM.<br /><br />
-
-            <Image width="0" height="0" className={styles.screenshot} 
-              src="https://raw.githubusercontent.com/Gekinzuku/pong-2600/main/screenshot.png" 
-              alt="Pong 2600 Screenshot"
-            />&nbsp;
-          </p>
-        </div>
       </main>
     </>
   )

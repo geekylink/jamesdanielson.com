@@ -16,13 +16,7 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
-}
-
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+  padding: 0.5rem;
 }
 
 .description p {
@@ -275,4 +269,76 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.avatar {
+  height: 100%;
+  width:100%;
+  max-width: 10vw;
+  min-width: 100px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-image: var(--avatar-img);
+  background-size: cover;
+  background-size: center;
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.header {
+  width: 100%;
+  max-width: var(--max-width);
+  text-align: center;
+  
+}
+
+.headerlabel {
+  font-size: 1.5rem;
+  font-family: var(--font-mono);
+}
+
+.text {
+  text-align: center;
+  line-height: 25px;
+  padding-top: 25px;
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+  margin: 0.25rem;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+}
+
+.textsection {
+  width: 100%;
+}
+
+.screenshot {
+  width: 100%;
+  height: 100%;
+}
+
+.textleft {
+  text-align: left;
+  align-items: left;
+}
+
+.text a {
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: blue;
+}
+
+.text a:hover {
+  color: lightseagreen;
+}
+
+.text .link:visited {
+  color: blueviolet;
+}
+
+.text .link:visited:hover {
+  color: lightseagreen;
 }

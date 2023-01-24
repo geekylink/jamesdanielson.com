@@ -29,9 +29,9 @@ const What: NextPage = () => {
               alt="James Danielson"
             />
         </div>
-        <div className={styles.description}>
+        <div className={styles.textsection}>
           <p className={styles.text}>
-		        An overview of things James Danielson has worked on.
+		        An overview of projects I&apos;ve worked on.
           </p>
         </div>
 
@@ -51,7 +51,12 @@ const What: NextPage = () => {
               rel="noopener noreferrer"
             >
               GitHub
-              </a>.<br />
+              </a>.<br /><br />
+            You can also check out an overview of some other sites I have run
+            over the years&nbsp;
+            <Link href="/websites">
+              here
+            </Link>.
           </p>
         </div>
 

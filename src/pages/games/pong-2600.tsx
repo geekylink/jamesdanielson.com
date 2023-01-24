@@ -19,6 +19,36 @@ const What: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <h1>Pong 2600</h1><br />
+
+        <div className={styles.textsection}>
+
+          <div className={styles.text}>
+
+          <Link
+            href="https://github.com/Gekinzuku/pong-2600"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</Link><br /><br />
+
+            An old homebrew pong clone for the Atari 2600 written in 6502 ASM back in 2010.<br /><br />
+
+            This was my first project with 6502 ASM.<br /><br />
+
+            <strong>Gameplay:</strong><br /><br />
+
+            At the start of the game you press the &quot;Select&quot; button a few times. This will set the size of your paddle. Once you are happy, press &quot;Reset.&quot; This will start the game. Every time you score a point your paddle gets smaller. You win when your paddle no longer exists. The last few points can be pretty tricky. Of course after that you can press &quot;Reset&quot; again to play again.<br /><br />
+
+            Also, no sound... that&apos;s just kinda the way it is.<br /><br />
+
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/t-PAIlWh2R4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe><br /><br />
+
+            <a href="https://raw.githubusercontent.com/Gekinzuku/pong-2600/main/screenshot.png">
+              <Image width="0" height="0" className={styles.thumbnail} 
+                src="https://raw.githubusercontent.com/Gekinzuku/pong-2600/main/screenshot.png"
+                alt="Pong for the 2600" />
+            </a>
+            </div>
+        </div>
         <div className={styles.grid}>
           <Link
             href="/"
@@ -66,31 +96,6 @@ const What: NextPage = () => {
               Check out the code for Pong 2600 here.
             </p>
           </Link>
-        </div>
-
-        <div className={styles.textsection}>
-
-          <div className={styles.text}>
-            <strong>Pong 2600</strong><br /><br />
-
-            An old homebrew pong clone for the Atari 2600 written in 6502 ASM back in 2010.<br /><br />
-
-            This was my first project with 6502 ASM.<br /><br />
-
-            <strong>Gameplay:</strong><br /><br />
-
-            At the start of the game you press the &quot;Select&quot; button a few times. This will set the size of your paddle. Once you are happy, press &quot;Reset.&quot; This will start the game. Every time you score a point your paddle gets smaller. You win when your paddle no longer exists. The last few points can be pretty tricky. Of course after that you can press &quot;Reset&quot; again to play again.<br /><br />
-
-            Also, no sound... that&apos;s just kinda the way it is.<br /><br />
-
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/t-PAIlWh2R4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe><br /><br />
-
-            <a href="https://raw.githubusercontent.com/Gekinzuku/pong-2600/main/screenshot.png">
-              <Image width="0" height="0" className={styles.thumbnail} 
-                src="https://raw.githubusercontent.com/Gekinzuku/pong-2600/main/screenshot.png"
-                alt="Pong for the 2600" />
-            </a>
-            </div>
         </div>
       </main>
     </>

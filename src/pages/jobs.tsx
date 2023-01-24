@@ -4,7 +4,7 @@ import { Inter } from '@next/font/google'
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "../../styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,24 +12,32 @@ const What: NextPage = () => {
   return (
     <>
       <Head>
-        <title>James Danielson - Tools & Scripts</title>
+        <title>James Danielson - Jobs</title>
         <meta name="description" content="James Danielson" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <div className={styles.header}>
-            <strong className={styles.headerlabel}>James Tools</strong>
+            <strong className={styles.headerlabel}>James Jobs</strong>
         </div>
         <div className={styles.description}>
           <p className={styles.text}>
-		        A collection of some public tools I&apos;ve worked on.
+		        An overview of the many different jobs I&apos;ve had.
           </p>
         </div>
 
         <div className={styles.textsection}>
           <p className={styles.text}>
-            <strong><Link href="/games/merge">M.E.R.G.E.</Link></strong><br /><br />
+            <strong>Other Jobs</strong><br /><br />
+            Simple cooperative unity game similar to asteroids, players must work together to defeat larger enemies by combining ships together.<br /><br />
+
+          </p>
+        </div>
+
+        <div className={styles.textsection}>
+          <p className={styles.text}>
+            <strong>Other Jobs</strong><br /><br />
             Simple cooperative unity game similar to asteroids, players must work together to defeat larger enemies by combining ships together.<br /><br />
 
           </p>

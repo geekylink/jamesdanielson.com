@@ -19,72 +19,26 @@ const What: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <h1>Santa&apos;s Challenge</h1><br />
-        <div className={styles.grid}>
-          <Link
-            href="/"
-            className={styles.card}
-          >
-            <h2 className={inter.className}>
-              Home <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Back to the home page.
-            </p>
-          </Link>
-          <Link
-            href="/what"
-            className={styles.card}
-          >
-            <h2 className={inter.className}>
-              What Else? <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Check out my various projects here.
-            </p>
-          </Link>
-          <Link
-            href="/games"
-            className={styles.card}
-          >
-            <h2 className={inter.className}>
-              Other Games<span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Check out the other games I&apos;ve worked on.
-            </p>
-          </Link>
-          <Link
-            href="https://github.com/Gekinzuku/santaschallenge"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Git <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Check out the code for Santa&apos;s Challenge here.
-            </p>
-          </Link>
-        </div>
 
         <div className={styles.textsection}>
           <div className={styles.text}>
-            <strong>Santa&apos;s Challenge</strong><br /><br />
             A Chip&apos;s Challenge clone for Nintendo DS<br /><br />
 
+
+          <Link
+            href="https://github.com/Gekinzuku/santaschallenge"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub</Link> |&nbsp;
           <a
             href="https://github.com/Gekinzuku/santaschallenge/releases/tag/v1.0.0"
-            className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
             Download and play the ROM for your emulator or DS.
           </a><br /><br />
 
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1YKwjQgeGw4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe><br /><br />
-
-            <div className={styles.textleft}>
+          <div className={styles.textleft}>
               <strong>Story:</strong>&nbsp;
               It is December, and Santa is preparing to give his toys to all
               the children of the world. But he got lost on December first
@@ -99,20 +53,8 @@ const What: NextPage = () => {
               <br /><br />
 
             </div><div>
-            <Image width="254" height="382" 
-              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/title-screen.png" 
-              alt="Santa's Challenge - Title Screen"
-            />&nbsp;&nbsp;
-            <Image width="254" height="382" 
-              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/level1.png" 
-              alt="Santa's Challenge - Level One"
-            />&nbsp;&nbsp;
-            <Image width="254" height="382" 
-              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/level3.png" 
-              alt="Santa's Challenge - Level Three"
-            />
-            <br /><br />
-            </div><div className={styles.textleft}>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1YKwjQgeGw4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe><br /><br />
+            <div className={styles.textleft}>
 
               <strong>Description:</strong>&nbsp;
               The three of us that made this game
@@ -126,6 +68,21 @@ const What: NextPage = () => {
               to keep the graphics from being overly fancy and by using music 
               with an older feel to it.
               <br /><br />
+
+              </div><div><Image width="254" height="382" 
+              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/title-screen.png" 
+              alt="Santa's Challenge - Title Screen"
+            />&nbsp;&nbsp;
+            <Image width="254" height="382" 
+              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/level1.png" 
+              alt="Santa's Challenge - Level One"
+            />&nbsp;&nbsp;
+            <Image width="254" height="382" 
+              src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/level3.png" 
+              alt="Santa's Challenge - Level Three"
+            />
+            <br /><br />
+            </div><div className={styles.textleft}>
 
               <strong>Controls:</strong>&nbsp;
               The game is designed so it can easily be played by a right or 
@@ -192,6 +149,56 @@ const What: NextPage = () => {
               <br /><br />
             </div>
           </div>
+        </div>
+      </div>
+
+        <div className={styles.grid}>
+          <Link
+            href="/"
+            className={styles.card}
+          >
+            <h2 className={inter.className}>
+              Home <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Back to the home page.
+            </p>
+          </Link>
+          <Link
+            href="/what"
+            className={styles.card}
+          >
+            <h2 className={inter.className}>
+              What Else? <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Check out my various projects here.
+            </p>
+          </Link>
+          <Link
+            href="/games"
+            className={styles.card}
+          >
+            <h2 className={inter.className}>
+              Other Games<span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Check out the other games I&apos;ve worked on.
+            </p>
+          </Link>
+          <Link
+            href="https://github.com/Gekinzuku/santaschallenge"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className={inter.className}>
+              Git <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Check out the code for Santa&apos;s Challenge here.
+            </p>
+          </Link>
         </div>
       </main>
     </>

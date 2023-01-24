@@ -31,10 +31,57 @@ const Who: NextPage = () => {
         </div>
         <div className={styles.description}>
           <p className={styles.text}>
-		        Welcome to James Danielson portfolio website.
+		        A brief autobiography of James Danielson.
           </p>
         </div>
-        <div className={styles.grid}>
+        
+        <div className={styles.textsection}>
+          <p className={styles.text}>
+            Hey, I&apos;m James Danielson and I am a software developer with over ten
+            years of experience. I&apos;ve worked in a wide variety of fields from
+            fintech to cyber security, and I like to make games sometimes. <br />
+            If you&apos;re looking for a software developer, check out my&nbsp;
+            <Link className={styles.link} href="/Resume.pdf">
+              Résumé
+            </Link> - You can also find me on&nbsp;
+            <Link className={styles.link} 
+              href="https://www.linkedin.com/in/james-danielson-33aba264/"
+            >
+              LinkedIn
+            </Link>.
+          </p>
+        </div>
+        <div className={styles.textsection}>
+          <p className={styles.text}>
+            Graduated from the University of Michigan with a degree in
+            Computer Science and studied a semester abroad at JiaoTong 
+            University in Shanghai, China. Also have experience teaching
+            both at a university and high school level, along with a strange 
+            mix of other educational experience which you can read more 
+            about&nbsp;
+            <Link className={styles.link} href="/education">here</Link>.
+            <br /><br />
+            Prior to university, I was a member of Boy Scouts and achieved the
+            rank of Eagle, you can read about my scouting experience&nbsp;
+            <Link className={styles.link}  href="/eagle">here</Link>.
+          </p>
+        </div>
+        <div className={styles.textsection}>
+          <p className={styles.text}>
+            I&apos;ve lived on three continents and visited over twenty countries thus
+            far, with a tendancy to always be on the move. As a result, I have a
+            full office, that can fit into my backpack. Complete with an extra
+            portable monitor, and more than enough computing power to simulate an
+            entire network of connected machines; even backup power and data
+            for internet.<br /><br />
+            I tend to travel slowly, staying in one location for a long time 
+            (sometimes years) and gradually exploring the surrounding area.
+            <br /><br />
+            Check out my web app which shows the places I have visited: <a href="#"><em>Broken</em></a><br />
+          </p>
+        </div>
+
+      <div className={styles.grid}>
           <Link
             href="/"
             className={styles.card}
@@ -82,45 +129,6 @@ const Who: NextPage = () => {
             </p>
           </Link>
         </div>
-        <div className={styles.textsection}>
-          <p className={styles.text}>
-            Hey, I&apos;m James Danielson and I am a software developer with over ten
-            years of experience. I&apos;ve worked in a wide variety of fields from
-            fintech to cyber security, and I like to make games sometimes. <br />
-            If you&apos;re looking for a software developer, check out my&nbsp;
-            <Link className={styles.link} href="/Resume.pdf">
-              Résumé
-            </Link> - You can also find me on&nbsp;
-            <Link className={styles.link} 
-              href="https://www.linkedin.com/in/james-danielson-33aba264/"
-            >
-              LinkedIn
-            </Link>.
-          </p>
-        </div>
-        <div className={styles.textsection}>
-          <p className={styles.text}>
-            I&apos;ve lived on three continents and visited over twenty countries thus
-            far, with a tendancy to always be on the move. As a result, I have a
-            full office, that can fit into my backpack. Complete with an extra
-            portable monitor, and more than enough computing power to simulate an
-            entire network of connected machines; even backup power and internet.
-            {/* TODO: Check out my app that shows all the locations I have been with photos */}
-          </p>
-        </div>
-
-        <div className={styles.textsection}>
-          <p className={styles.text}>
-            Back in highschool, I ran a website dedicated to modding old Nintendo
-            games as well as homebrew game development called&nbsp;
-            <Link className={styles.link} href="https://gekinzuku.com">
-              Gekinzuku
-            </Link>. The website has been dead for years at this point.<br />
-
-            However, if you&apos;re interested, you can find the old projects on: <Link className={styles.link} href="https://github.com/Gekinzuku">Gekinzuku github</Link><br/>
-            You can also find some of the old videos on: <Link className={styles.link} href="https://www.youtube.com/geekylink">YouTube</Link>
-          </p>
-      </div>
       </main>
     </>
   )

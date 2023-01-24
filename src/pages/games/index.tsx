@@ -26,52 +26,6 @@ const What: NextPage = () => {
 		        A collection of games I&apos;ve worked on.
           </p>
         </div>
-        <div className={styles.grid}>
-          <Link
-            href="/"
-            className={styles.card}
-          >
-            <h2 className={inter.className}>
-              Home <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Back to the home page.
-            </p>
-          </Link>
-          <Link
-            href="/what"
-            className={styles.card}
-          >
-            <h2 className={inter.className}>
-              What Else? <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Check out my various projects here.
-            </p>
-          </Link>
-          <Link
-            href="/who"
-            className={styles.card}
-          >
-            <h2 className={inter.className}>
-              Who are you? <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Who is James Danielson?
-            </p>
-          </Link>
-          <Link
-            href="/Resume.pdf"
-            className={styles.card}
-          >
-            <h2 className={inter.className}>
-              Résumé <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Check out my Résumé here.
-            </p>
-          </Link>
-        </div>
 
         <div className={styles.textsection}>
           <p className={styles.text}>
@@ -134,6 +88,53 @@ const What: NextPage = () => {
                 alt="Gameplay" />
             </Link><br />
           </p>
+        </div>
+
+        <div className={styles.grid}>
+          <Link
+            href="/"
+            className={styles.card}
+          >
+            <h2 className={inter.className}>
+              Home <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Back to the home page.
+            </p>
+          </Link>
+          <Link
+            href="/what"
+            className={styles.card}
+          >
+            <h2 className={inter.className}>
+              What Else? <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Check out my various projects here.
+            </p>
+          </Link>
+          <Link
+            href="/who"
+            className={styles.card}
+          >
+            <h2 className={inter.className}>
+              Who are you? <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Who is James Danielson?
+            </p>
+          </Link>
+          <Link
+            href="/Resume.pdf"
+            className={styles.card}
+          >
+            <h2 className={inter.className}>
+              Résumé <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Check out my Résumé here.
+            </p>
+          </Link>
         </div>
       </main>
     </>

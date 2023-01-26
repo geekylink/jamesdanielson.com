@@ -29,6 +29,15 @@ const What: NextPage = () => {
 
         <div className={styles.textsection}>
           <p className={styles.text}>
+            You can also check out my job experience&nbsp;
+            <Link href="/jobs">
+              here
+            </Link>.
+          </p>
+        </div>
+
+        <div className={styles.textsection}>
+          <p className={styles.text}>
             <strong className={styles.title}>Pre-University</strong><br /><br />
 		        I had a rather unusual experience growing up. My mother had a 
             masters in education and decided to homeschool me after about half
@@ -169,12 +178,12 @@ const What: NextPage = () => {
           - Practiced piano for around ten years<br /><br />
           - Wood carving<br /><br />
           - Basic construction with lumber & plumbing<br /><br />
-          - Entrepreneurship<br /><br />
+          - Attended various entrepreneurship seminars and business classes.<br /><br />
 
           <strong>Language:</strong><br /><br />
           - Studied Chinese & Chinese Culture in Shanghai, China<br /><br />
           - Studied Spanish in South America in a small town in Ecuador<br /><br />
-          - DuoLingo user since 2016:<br />
+          - DuoLingo user since 2016, languages I've studied on it:<br />
           * Spanish (+)<br />
           * Chinese (+)<br />
           * Russian<br />

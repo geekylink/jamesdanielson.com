@@ -55,12 +55,19 @@ const Who: NextPage = () => {
           <p className={styles.text}>
             Graduated from the University of Michigan with a degree in
             Computer Science and studied a semester abroad at JiaoTong 
-            University in Shanghai, China. Also have experience teaching
+            University in Shanghai, China.<br/><br />
+
+            Also have experience teaching
             both at a university and high school level, along with a strange 
             mix of other educational experience which you can read more 
             about&nbsp;
             <Link className={styles.link} href="/education">here</Link>.
             <br /><br />
+
+            You can also check out my job experience&nbsp;
+            <Link className={styles.link} href="/jobs">here</Link>.
+            <br /><br />
+
             Prior to university, I was a member of Boy Scouts and achieved the
             rank of Eagle, you can read about my scouting experience&nbsp;
             <Link className={styles.link}  href="/eagle">here</Link>.
@@ -120,6 +127,8 @@ const Who: NextPage = () => {
           <Link
             href="/Resume.pdf"
             className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
               Résumé <span>-&gt;</span>

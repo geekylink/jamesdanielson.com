@@ -58,7 +58,7 @@ const What: NextPage = () => {
         </div>
 
 
-        {<div className={styles.textsection}>
+        {/*<div className={styles.textsection}>
           <p className={styles.text}>
             <strong><Link href="https://expatcitizen.com" target="blank" rel="noopener noreferrer">Expat Citizen</Link></strong><br /><br />
             An infrequently updated blog about oppurtunities abroad I have
@@ -69,7 +69,7 @@ const What: NextPage = () => {
             space.
             <br /><br />
           </p>
-  </div>}
+        </div>*/}
 
 
         <div className={styles.grid}>

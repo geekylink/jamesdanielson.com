@@ -66,7 +66,9 @@ const What: NextPage = () => {
             games as well as homebrew game development called&nbsp;
             <Link href="https://gekinzuku.com">
               Gekinzuku
-            </Link>. The website has been dead for years at this point.<br />
+            </Link>.<br /><br />
+            
+            The website has been dead for years at this point.<br /><br />
 
             However, if you&apos;re interested, you can find the old projects on: <Link target="_blank" rel="noopener noreferrer" href="https://github.com/Gekinzuku">Gekinzuku github</Link><br/>
             You can also find some of the old videos on: <Link target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/geekylink">YouTube</Link>
@@ -142,6 +144,8 @@ const What: NextPage = () => {
           <Link
             href="/Resume.pdf"
             className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
               Résumé <span>-&gt;</span>

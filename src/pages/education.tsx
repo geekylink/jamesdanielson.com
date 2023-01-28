@@ -183,7 +183,7 @@ const What: NextPage = () => {
           <strong>Language:</strong><br /><br />
           - Studied Chinese & Chinese Culture in Shanghai, China<br /><br />
           - Studied Spanish in South America in a small town in Ecuador<br /><br />
-          - DuoLingo user since 2016, languages I've studied on it:<br />
+          - DuoLingo user since 2016, languages I&apos;ve studied on it:<br />
           * Spanish (+)<br />
           * Chinese (+)<br />
           * Russian<br />

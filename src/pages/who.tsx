@@ -37,9 +37,11 @@ const Who: NextPage = () => {
         
         <div className={styles.textsection}>
           <p className={styles.text}>
-            Hey, I&apos;m James Danielson and I am a software developer with over ten
-            years of experience. I&apos;ve worked in a wide variety of fields from
-            fintech to cyber security, and I like to make games sometimes. <br />
+            Hey, I&apos;m James Danielson and I am a software developer with 
+            over ten years of experience. I&apos;ve worked in a wide variety
+            of fields from fintech to cyber security, and I like to make games
+            sometimes. <br /><br/>
+            
             If you&apos;re looking for a software developer, check out my&nbsp;
             <Link className={styles.link} href="/Resume.pdf">
               Résumé
@@ -70,7 +72,10 @@ const Who: NextPage = () => {
 
             Prior to university, I was a member of Boy Scouts and achieved the
             rank of Eagle, you can read about my scouting experience&nbsp;
-            <Link className={styles.link}  href="/eagle">here</Link>.
+            <Link className={styles.link}  href="/eagle">here</Link>.<br/><br/>
+
+            You can also learn more about the various personal projects of mine&nbsp;
+            <Link className={styles.link}  href="/what">here</Link>.
           </p>
         </div>
         <div className={styles.textsection}>

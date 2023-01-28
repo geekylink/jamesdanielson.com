@@ -37,7 +37,10 @@ const What: NextPage = () => {
 
         <div className={styles.textsection}>
           <p className={styles.text}>
-            I&apos;ve worked on a bunch of different kinds of projects, and developed many tools for everything from fintech to cyber security and devops. Also, I like to make games and used to run a website for game modding.
+            I&apos;ve worked on a bunch of different kinds of projects, and 
+            developed many tools for everything from fintech to cyber 
+            security and devops. Also, I like to make games and used to run a
+            website for game modding.
           </p>
         </div>
 
@@ -55,6 +58,11 @@ const What: NextPage = () => {
             You can also check out an overview of some other sites I have run
             over the years&nbsp;
             <Link href="/websites">
+              here
+            </Link>.<br/><br/>
+
+            You can also learn more about my background&nbsp;
+            <Link href="/who">
               here
             </Link>.
           </p>
@@ -86,7 +94,7 @@ const What: NextPage = () => {
                 alt="Gameplay Screenshot" />
             </Link>
             <Link href="/games/santaschallenge">
-              <Image width="254" height="382" 
+              <Image width="254" height="382" className={styles.thumbnail}
                 src="https://raw.githubusercontent.com/geekylink/santaschallenge/main/screenshots/level3.png" 
                 alt="Santa's Challenge - Level One"
               />

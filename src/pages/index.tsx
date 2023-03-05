@@ -61,14 +61,16 @@ export default function Home() {
           </Link>
 
           <Link
-            href="#"
+            href="http://world.jamesdanielson.com"
             className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Where Are You? <span>-&gt;</span>
+              Where Have You Been? <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              I am from Michigan but have been all around, check out the various places I have been here. (Temporarily down)
+              I am from Michigan but have been all around, check out the various places I have been here.
             </p>
           </Link>
 

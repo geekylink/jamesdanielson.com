@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
       <div className={styles.header}>
-            <strong className={styles.headerlabel}>James Danielson&nbsp;</strong>
+            <strong className={styles.headerlabel}>James Danielson</strong><br />
             <Image 
               width="0"
               height="0"

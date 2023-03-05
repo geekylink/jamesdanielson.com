@@ -19,7 +19,7 @@ const What: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <div className={styles.header}>
-            <strong className={styles.headerlabel}>So what does James do?&nbsp;</strong>
+            <strong className={styles.headerlabel}>So what does James do?</strong><br />
             <Image
               width="0"
               height="0"

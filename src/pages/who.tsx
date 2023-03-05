@@ -19,7 +19,7 @@ const Who: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <div className={styles.header}>
-            <strong className={styles.headerlabel}>So who is James?&nbsp;</strong>
+            <strong className={styles.headerlabel}>So who is James?</strong><br />
             <Image 
               width="0"
               height="0"

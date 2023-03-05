@@ -230,11 +230,8 @@
 }
 
 .avatar {
-  height: 100%;
-  width:100%;
-  max-width: 10vw;
-  min-width: 100px;
-  aspect-ratio: 1;
+  height: 200px;
+  width: 200px;
   border-radius: 100%;
   background-image: var(--avatar-img);
   object-fit: cover;

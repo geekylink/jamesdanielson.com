@@ -61,16 +61,14 @@ export default function Home() {
           </Link>
 
           <Link
-            href="http://world.jamesdanielson.com"
+            href="/jobs"
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Where Have You Been? <span>-&gt;</span>
+              Job History <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              I am from Michigan but have been all around, check out the various places I have been here.
+              Check out my job experience here.
             </p>
           </Link>
 
@@ -144,7 +142,21 @@ export default function Home() {
             </p>
           </Link>
 
-          {/*<a
+          {/*
+          <Link
+            href="http://world.jamesdanielson.com"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className={inter.className}>
+              Where Have You Been? <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              I am from Michigan but have been all around, check out the various places I have been here.
+            </p>
+          </Link>
+          <a
             href="https://toothtreks.com"
             className={styles.card}
             target="_blank"

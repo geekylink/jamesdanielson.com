@@ -29,7 +29,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build # The folder your build command outputs to
+          path: ./dist # The folder your build command outputs to
 
   deploy:
     environment:

@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Marea Alta Surf Bar",
+    "location": { "lat": -1.8267, "lng": -80.7526 },
+    "description": "The bar, right in Montañita. (Placeholder coordinates: drag the pin to the exact spot by editing lat/lng.)",
+    "color": "#ff5440",
+    "link": "https://www.instagram.com/marea.alta.surf/",
+    "linkLabel": "See us on Instagram"
+  },
+  {
+    "name": "Montañita beach",
+    "location": { "lat": -1.8305, "lng": -80.7562 },
+    "description": "Sunsets, surf, and the main strip. Edit this entry or replace it with your own favorite spot.",
+    "color": "#ffb81f",
+    "link": "#/blog/montanita-sunsets",
+    "linkLabel": "Read the blog entry"
+  },
+  {
+    "name": "Olón",
+    "location": { "lat": -1.8007, "lng": -80.7547 },
+    "description": "A long, quiet beach a short ride north of Montañita.",
+    "color": "#0a7377"
+  },
+  {
+    "name": "Ayampe",
+    "location": { "lat": -1.6844, "lng": -80.804 },
+    "description": "Laid-back river-meets-sea village further up the coast.",
+    "color": "#7a4bd6"
+  },
+  {
+    "name": "Puerto López",
+    "location": { "lat": -1.5547, "lng": -80.81 },
+    "description": "Fishing town and the starting point for Isla de la Plata trips.",
+    "color": "#1f78d1"
+  }
+]

@@ -1,37 +1,71 @@
-This is the code for https://jamesdanielson.com
+# Coast Hub
 
-This site is static build of a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A mobile-first Svelte 5 + Vite site with four homepage cards: developer portfolio, blog, map, and Marea Alta Surf Bar.
 
-## Getting Started
-
-**Initialize:**
+## Run it
 
 ```bash
 npm install
+npm run dev        # http://localhost:5173
+npm run build      # outputs a static site to dist/
+npm run preview    # serve the built site locally
 ```
 
-**Run the development server:**
+Requires Node 18+ (Node 20+ recommended). The build is fully static and uses hash routes (`#/blog`, `#/map`), so it works on any static host (Netlify, GitHub Pages, Cloudflare Pages, an S3 bucket, plain nginx) with no server rules.
 
-```bash
-npm run dev
+## Add or edit blog posts
+
+Create a file in `blog/`, for example `blog/my-first-surf-trip.json`. The file name is the URL slug (`#/blog/my-first-surf-trip`).
+
+```json
+{
+  "title": "My first surf trip",
+  "date": "2026-10-05",
+  "categories": ["Travel", "Surf"],
+  "post": [
+    "Markdown goes here, **bold**, [links](https://example.com), lists, code, images.",
+    "",
+    "Each array item is one line. A single string with \\n also works."
+  ]
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `categories` can hold several values. The blog page builds its category dropdown automatically from all posts.
+- The search box matches the title, body, and categories.
+- Posts are sorted by `date` (newest first). Use `YYYY-MM-DD`.
+- Restart is not needed in dev: Vite hot-reloads when you add or change a file.
 
-## Build Static Site:
+## Edit the map
 
-```bash
-npm run build
+Edit `map_pins.json`. Each pin:
+
+```json
+{
+  "name": "Montañita beach",
+  "location": { "lat": -1.8305, "lng": -80.7562 },
+  "description": "Short text shown in the popup and the list under the map.",
+  "color": "#ffb81f",
+  "link": "#/blog/montanita-sunsets",
+  "linkLabel": "Read the blog entry"
+}
 ```
 
-Serve the files found in the `/out/*` folder.
+- `link` and `linkLabel` are optional. `#/blog/<file-name>` links to a blog post in this site; any `https://` link opens in a new tab.
+- `color` accepts hex (`#ff5440`), color names, `rgb()`, or `hsl()`.
+- The sample coordinates are approximate. To get exact ones, right-click a spot on openstreetmap.org and choose "Show address" or copy the coordinates from the URL.
 
-**Note:** To run static builds of [Next.js](https://nextjs.org/) the '[package.json](https://github.com/geekylink/jamesdanielson.com/blob/main/package.json)' build line must inclue 'next export' like so:
+## Change the homepage cards
+
+Everything on the homepage lives in `src/routes/Home.svelte`. Each `<Card>` takes `title`, `text`, `cta`, `href`, and a `tone` (`dev`, `blog`, `map`, `bar`). Colors and fonts are CSS variables at the top of `src/app.css`.
+
+## Project layout
 
 ```
-"build": "next build && next export",
+blog/                 your posts (JSON)
+map_pins.json         your map pins
+src/routes/           Home, Blog, Post, MapPage
+src/lib/              Header, Footer, Card, PageHero, Waves, router, blog loader
+src/app.css           global styles and design tokens
 ```
 
-Certain functionality is not supported with static sites. Check out the [documentation](https://nextjs.org/docs/advanced-features/static-html-export) for details.
-
-Image optimization was disabled in '[next.config.js](https://github.com/geekylink/jamesdanielson.com/blob/main/next.config.js)' for this reason as well.
+Map tiles come from OpenStreetMap's public tile server, which is fine for a small personal site. If traffic grows, switch to a tile provider and keep the attribution.

@@ -1,0 +1,12 @@
+{
+  "title": "Sunsets in Montañita",
+  "date": "2026-09-20",
+  "categories": ["Montañita", "Travel"],
+  "post": [
+    "Sample entry for the **Montañita beach** pin on the map.",
+    "",
+    "Replace this text with a real story, photos (`![alt](https://example.com/photo.jpg)`), and links.",
+    "",
+    "> Tip: the map pin's `link` field can point to any blog post with `#/blog/<file-name>`."
+  ]
+}

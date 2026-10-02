@@ -1,0 +1,18 @@
+{
+  "title": "Welcome to the blog",
+  "date": "2026-10-01",
+  "categories": ["Meta"],
+  "post": [
+    "# Welcome",
+    "",
+    "This is a **sample post**. Every `.json` file in the `blog/` folder becomes a post on the blog page.",
+    "",
+    "## How it works",
+    "",
+    "- The file name becomes the URL, so `welcome.json` lives at `#/blog/welcome`.",
+    "- `post` is written in markdown. Use an array of lines (like this one) or one string with `\\n` for line breaks.",
+    "- `categories` is a list, so a post can belong to several categories.",
+    "",
+    "Delete or edit this file whenever you like."
+  ]
+}

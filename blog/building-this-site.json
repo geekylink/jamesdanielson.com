@@ -1,0 +1,14 @@
+{
+  "title": "Building this site with Svelte",
+  "date": "2026-09-28",
+  "categories": ["Tech", "Meta"],
+  "post": [
+    "Another sample post, showing a code block:",
+    "",
+    "```js",
+    "const posts = import.meta.glob('/blog/*.json', { eager: true });",
+    "```",
+    "",
+    "The blog is just JSON files in a folder, so there is no database and no admin login to maintain."
+  ]
+}

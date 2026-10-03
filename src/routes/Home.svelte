@@ -75,12 +75,12 @@
     <Card
       wide
       tone="bar"
-      href="#/blog/marea-alta-surf-bar"
+      href="https://mareaaltabar.com/"
       external
       kicker="The Surf Salsa Bar in Montañita, Ecuador"
       title="Marea Alta Surf Bar"
       text="A surf bar in Montañita, Ecuador. See what's happening on social media."
-      cta="Check out the post for more information"
+      cta="Check out the website for more information"
     >
       {#snippet icon()}
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
